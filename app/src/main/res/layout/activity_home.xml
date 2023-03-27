@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/loginlogo" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="ALIVE"
+            android:textAlignment="viewStart"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:srcCompat="@drawable/doctor" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="203dp"
+        android:layout_height="430dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnApntmnt"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/appoinment" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Book Appointment"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnfinddr"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/finddoctor" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Find Doctor"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/emergency" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Emergency"
+                android:textAlignment="center"  />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="162dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="203dp"
+        android:layout_height="430dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/reports" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Report"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnoperation"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/operation" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Operations"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton18"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/opd" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="OPD"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
